@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <header>
+            <h1>🧠 Quiz Master</h1>
+            <p>Test your knowledge and challenge yourself!</p>
+        </header>
+
+        <!-- Score Board -->
+        <div class="score-board">
+            <div class="score-box">
+                <span>👤 Player</span>
+                <h2 id="player-score">0</h2>
+            </div>
+
+            <div class="score-box">
+                <span>🤖 Computer</span>
+                <h2 id="computer-score">0</h2>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section">
+
+            <div class="quiz-info">
+                <span id="question-number">Question 1 / 10</span>
+                <span id="turn">Your Turn</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+
+            <h2 id="question">Loading question...</h2>
+
+            <div id="options" class="options"></div>
+
+            <p id="feedback"></p>
+
+            <button id="next-btn" class="next-btn" disabled>
+                Next Question →
+            </button>
+
+        </div>
+
+        <!-- Result Section -->
+        <div id="result-section" class="hidden">
+            <div class="result-icon">🏆</div>
+            <h2>Quiz Completed!</h2>
+            <p id="result-message"></p>
+
+            <div class="final-score">
+                <span>Your Final Score</span>
+                <h1 id="final-score">0 / 10</h1>
+            </div>
+
+            <button id="restart-btn">🔄 Play Again</button>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
